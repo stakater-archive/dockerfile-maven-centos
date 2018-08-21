@@ -24,6 +24,8 @@ ENV PATH $M2:$PATH
 
 # Set JDK to be 32bit
 COPY set_java $M2
+RUN ls -l $M2
+RUN whoami
 RUN $M2/set_java && rm $M2/set_java
 RUN java -version
 
