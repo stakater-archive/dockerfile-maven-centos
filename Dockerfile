@@ -25,4 +25,4 @@ ENV PATH $M2:$PATH
 USER 10001
 
 # Define default command, can be overriden by passing an argument when running the container
-CMD ["bash"]
+CMD ["mvn","-version"]
