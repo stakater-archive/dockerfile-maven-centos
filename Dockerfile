@@ -22,6 +22,8 @@ ENV maven.home $M2_HOME
 ENV M2 $M2_HOME/bin
 ENV PATH $M2:$PATH
 
+RUN printenv
+
 # Set JDK to be 32bit
 COPY set_java $M2
 RUN ls -l $M2
