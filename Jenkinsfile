@@ -3,4 +3,4 @@
 
 pushDockerImage {
     dockerRegistryURL = "docker.io"
-}
+} 
